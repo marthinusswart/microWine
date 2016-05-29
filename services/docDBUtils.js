@@ -1,3 +1,4 @@
+/**Azure DocumentDB utility class */
 var DocumentDBClient = require('documentdb').DocumentClient;
 
 var DocDBUtils = {

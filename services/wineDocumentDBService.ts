@@ -1,5 +1,6 @@
+/**Azure Document DB service */
 import documentdb = require('documentdb');
-import docdbUtils = require('./docdbUtils');
+//import docdbUtils = require('./docdbUtils');
 
 export class WineDocumentDBService {
     database: any;
@@ -13,6 +14,7 @@ export class WineDocumentDBService {
         let masterKey = "wzARKJzhjv4Bn2m0702YHbieqfyv71rL7lxNsn8Wh0zWt34luPy4M0faluA0FC2F6rRpQOZQm2DWj4Ry9KlnjQ==";
         self.client = new DocumentClient(host, { masterKey: masterKey });
 
+/*
         docdbUtils.getOrCreateDatabase(self.client, "microdb", function (err, db) {
             if (err) {
                 console.log(err);
@@ -27,6 +29,7 @@ export class WineDocumentDBService {
                 });
             }
         });
+        */
 
         return 0;
     }
