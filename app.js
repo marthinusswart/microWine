@@ -27,6 +27,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use('/', routes);
 app.use('/users', users);
 app.use('/api/v1/wine', wine);
+app.use('/api/v1/wine/:id', wine);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
